@@ -10,6 +10,6 @@ install:
 
 deploy:
   provider: script
-  script: npx vercel --token $VERCEL_TOKEN --prod
+  script: npx vercel --token $VERCEL_TOKEN --dev
   on:
     branch: main
