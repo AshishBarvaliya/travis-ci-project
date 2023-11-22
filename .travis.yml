@@ -1,14 +1,15 @@
 language: node_js
 
 node_js:
-  - 18.3.0
+  - 16
 
 cache: npm
 
 install:
   - npm install
-# deploy:
-#   provider: script
-#   script: npx vercel --token $VERCEL_TOKEN --prod
-#   on:
-#     branch: main
+
+deploy:
+  provider: script
+  script: npx vercel --token $VERCEL_TOKEN --prod
+  on:
+    branch: main
