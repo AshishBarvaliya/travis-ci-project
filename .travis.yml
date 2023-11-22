@@ -7,9 +7,8 @@ cache: npm
 
 install:
   - npm install
-
-deploy:
-  provider: script
-  script: npx vercel --token $VERCEL_TOKEN --prod
-  on:
-    branch: main
+# deploy:
+#   provider: script
+#   script: npx vercel --token $VERCEL_TOKEN --prod
+#   on:
+#     branch: main
